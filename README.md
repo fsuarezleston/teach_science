@@ -1,4 +1,4 @@
-# Scripts for teaching science
+# Scripts for teaching sciences
 
 This is a collection of scripts for the teaching of scientific phenomena. Scripts are classified by language (English, EN; Galician, GAL; Spanish, ES), and subject.
 
