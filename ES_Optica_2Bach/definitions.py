@@ -1542,7 +1542,8 @@ def PlotImageFormation( fig: mpl.figure, ax: mpl.axes, lenses, mirrors, y: float
         if r != np.inf:
             mirror_coords = Arc( (x+r,0), r=abs(r), ang1=np.arcsin(1.2*ymax/r) if r<0 else np.pi+np.arcsin(1.2*ymax/r), ang2=-np.arcsin(1.2*ymax/r) if r<0 else np.pi-np.arcsin(1.2*ymax/r) )
         else:
-            mirror_coords = (0, 0), (1.2*ymax, -1.2*ymax)
+            print("A")
+            mirror_coords = (x, x), (1.2*ymax, -1.2*ymax)
 
         ax.plot( *mirror_coords, "-", linewidth=8, alpha=0.8, color="lightsteelblue" )
         ax.text( x+0.005*abs(ax.get_xlim()[1]-ax.get_xlim()[0]), 1.15*ymax, f"$M{i}$", color="lightsteelblue", va = "top", ha="left", size=10 )
